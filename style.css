@@ -145,6 +145,29 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: rgb(82, 82, 82);
 }
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    position: fixed;
+    top: 58.5px;
+    height: 4px;
+    width: 100%;
+    border-radius: 100px;
+    opacity: 60%;
+    background: rgb(0, 114, 237);
+    animation: progress 1000ms ease-in;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes progress {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 /* menu btn styling */
 .menu-btn{
@@ -265,25 +288,22 @@ section .title::after{
     border: 3px solid rgb(0, 114, 237);
 }
 
-/* services section styling */
 
-/* skills section styling */
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: rgb(255, 255, 255);
     padding: 15px 23px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: rgb(128, 128, 128);
     text-decoration: none;
 }
 footer span a:hover{
     text-decoration: underline;
 }
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
