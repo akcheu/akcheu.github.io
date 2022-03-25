@@ -22,6 +22,7 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
+
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
@@ -35,10 +36,11 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Allen Cheung"],
-        typeSpeed: 150,
+        strings: ["Allen"],
+        typeSpeed: 100,
         backSpeed: 60,
-        loop: false
+        loop: false,
+        showCursor: true
     });
 
     var typed = new Typed(".typing-2", {
