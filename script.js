@@ -42,38 +42,12 @@ $(document).ready(function(){
         loop: false,
         showCursor: true
     });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Programmer", "Researcher", "Artist"],
-        typeSpeed: 80,
-        backSpeed: 60,
-        loop: true
-    });
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
 });
 
 window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
