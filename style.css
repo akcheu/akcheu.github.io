@@ -70,25 +70,26 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-section .title{
+.title{
+    display: flex;
     position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    text-align: left;
     margin-bottom: 30px;
     padding-bottom: 15px;
+    width: 200px;
+    border-radius: 20px;
+    background: rgb(183, 213, 228);
+    justify-content: center;
+}
+
+.title-text {
+    font-size: 35px;
+    font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 15px;
+    color:white;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
+
 
 /* navbar styling */
 .navbar {
@@ -335,15 +336,11 @@ section .title::before{
     border-style: dotted;
 }
 
-.title {
-    color:rgb(60, 60, 60)
-}
-
-.project {
+/* .project {
     border-radius: 10px;
     border: 3px solid rgb(195, 234, 255);
     padding: 50px;
-}
+} */
 
 .proj-title-first {
     font-size: 25px;
@@ -356,15 +353,23 @@ section .title::before{
     padding-bottom: 15px;
 }
 
+#experience {
+    background-image: linear-gradient(rgb(255, 244, 225), white)
+}
+
+#portfolio {
+    background-image: linear-gradient(rgb(232, 247, 255), white)
+}
+
 /* footer section styling */
 footer{
     background: rgb(255, 255, 255);
     padding: 15px 23px;
-    color: rgb(0, 0, 0);
+    color: rgb(189, 189, 189);
     text-align: center;
 }
 footer span a{
-    color: rgb(128, 128, 128);
+    color: rgb(160, 160, 160);
     text-decoration: none;
 }
 footer span a:hover{
