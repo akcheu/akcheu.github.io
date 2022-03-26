@@ -37,12 +37,26 @@ section{
 
 #about {
     padding: 150px 0;
+    animation: fade-about 700ms ease-in;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes fade-about {
+    0% {
+        opacity: 100%
+    }
+    100% {
+        opacity: 0%
+    }
 }
 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    border-color: red;
+    border-style: dotted;
 }
 .about, .projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -252,7 +266,31 @@ section .title::after{
 .about .about-content .right p{
     color: rgb(60, 60, 60);
     text-align: justify;
+    padding-top: 17px;
+    animation: about-fade 500ms ease-in;
 }
+
+@keyframes about-fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#sj {
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+    text-align: justify;
+    padding-right: 25px;
+}
+
+#email {
+    padding-right: 15px;
+    font-size: 30px;
+}
+
 .about .about-content .right a{
     display: inline-block;
     background: none;
@@ -260,7 +298,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 200;
     padding: 5px 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 15px;
     border-radius: 10px;
     border: 3px solid rgb(195, 234, 255);
@@ -288,6 +326,23 @@ section .title::after{
     border: 3px solid rgb(0, 114, 237);
 }
 
+.projects .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projects .card-container .info {
+    height: 400px;
+    width: 650px;
+    border-style: dotted;
+}
+
+.projects .card-container .desc {
+    height: 400px;
+    width: 400px;
+    border-style: dotted;
+}
 
 
 /* footer section styling */
