@@ -321,7 +321,7 @@ section{
 }
 
 #projects {
-    background-image: linear-gradient(rgb(232, 247, 255), white)
+    background-image: linear-gradient(rgb(221, 243, 255), white)
 }
 
 .projects .card-container {
@@ -333,13 +333,58 @@ section{
 .projects .card-container .info {
     height: 400px;
     width: 650px;
-    border-style: dotted;
+    border-style: none;
 }
 
 .projects .card-container .desc {
     height: 400px;
     width: 400px;
-    border-style: dotted;
+    border-style: none;
+}
+
+.projects .card-container .desc p {
+    text-align: justify;
+    color:rgb(60, 60, 60)
+}
+
+.proj-header-first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.proj-header{
+    padding-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.desc-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(196, 219, 232);
+    height: 43px;
+    width: 275px;
+}
+
+.desc-header a {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(122, 172, 199);
+}
+
+.desc-header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.desc-header span {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(236, 248, 255);
 }
 
 /* .project {
@@ -357,7 +402,6 @@ section{
 
 .proj-title {
     font-size: 25px;
-    padding-top: 65px;
     font-weight: 500;
     color:rgb(60, 60, 60);
     padding-bottom: 15px;
