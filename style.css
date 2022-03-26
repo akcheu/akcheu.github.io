@@ -314,6 +314,12 @@ section{
     border: 3px solid rgb(0, 114, 237);
 }
 
+
+.emoji {
+    padding-right: 15px;
+    font-size: 30px;
+}
+
 #projects {
     background-image: linear-gradient(rgb(232, 247, 255), white)
 }
@@ -344,14 +350,19 @@ section{
 
 .proj-title-first {
     font-size: 25px;
+    font-weight: 500;
+    color:rgb(60, 60, 60);
     padding-bottom: 15px;
 }
 
 .proj-title {
     font-size: 25px;
     padding-top: 65px;
+    font-weight: 500;
+    color:rgb(60, 60, 60);
     padding-bottom: 15px;
 }
+
 
 #experience {
     background-image: linear-gradient(rgb(255, 244, 225), white)
