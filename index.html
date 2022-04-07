@@ -49,13 +49,13 @@
                 <div class="column right">
                     <div class="text-1">Hello, I'm <span class = 'typing'></span></div>
                     <div class="body">
-                        <p>I am a senior Computer Science student at <a href="https://www.ucsd.edu">UC San Diego</a>, and will be graduating in <span style="font-weight: 500">June 2022</span>. Following my graduation, I will be attending graduate school at <span style="font-weight: 500">___</span> in pursuit of a <span style="font-weight: 500">Master of Science</span> in Computer Science with a concentration in  <span style="font-weight: 500">Artificial Intelligence</span>.</p>
+                        <p>I am a senior Computer Science student at <a href="https://www.ucsd.edu">UC San Diego</a>, and will be graduating in <span style="font-weight: 500">June 2022</span>. Following my graduation, I will be attending graduate school at <a href = "https://www.ucla.edu/">UCLA</a> in pursuit of a <span style="font-weight: 500">Master of Science</span> in Computer Science with a concentration in  <span style="font-weight: 500">Artificial Intelligence</span>.</p>
                         <p>My interests lie in <span style="font-weight: 500">computer vision</span> and multidisciplinary <span style="font-weight: 500">deep learning</span> applications. I am currently seeking internship opportunities for   <span style="font-weight: 500">Summer 2022</span>.</p>
                         <p><span style="font-size: 30px" >&#128205;</span> <span id = "sj">San Jose, CA</span><span id = "email">&#9993;&#65039;</span>akcheung @ ucsd.edu </p>
                     </div>
                     <a href="https://www.linkedin.com/in/akcheung/" id = "linkedin"><img src = images/linkedin.svg width=17px>  LinkedIn</a>
                     <a href="https://github.com/akcheu/" id = "github"><img src = images/githubs.svg width = 18px>  GitHub</a>
-                    <a href="#" id = "resume"><img src = images/resume.png width = 18px>  Resume</a>
+                    <a href="https://drive.google.com/file/d/1qZPQ-ffZnP-pCrhx_FWuxFGcZmWaZVoc/view?usp=sharing" id = "resume"><img src = images/resume.png width = 18px>  Resume</a>
                 </div>
             </div>
         </div>
@@ -81,10 +81,12 @@
                     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRp0uip8tKQM962RNH6zq6iC_9iIYgYzUkQG7w7dhJBNMcXRhDZ9Arame0X-J9YeICzLE3w-b_fsy9X/embed?start=true&loop=true&delayms=5000" frameborder="0" width=647 height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
                 <div class = "desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    <p>In this project, we are leveraging <a href = "https://arxiv.org/pdf/1506.01497.pdf" class = "desc-link">Faster R-CNN </a> and multimodal fusion mechanisms (<a href = "https://arxiv.org/pdf/1904.01649.pdf" class = "desc-link">MVX-Net</a>) to develop a deep learning model that fuses <span style="font-weight:600">2D images</span> and <span style="font-weight:600">3D point clouds</span> to improve autonomous driving action explainability & navigation. Prior work by <a href = “https://arxiv.org/pdf/2003.09405.pdf” class = "desc-link">Xu et. al</a> has demonstrated that multi-task learning improves 2D object detection and provides intuitive explanations for actions performed by an AV. We are aiming to extend upon this work to incorporate the 3D modality in hopes of improving performance in scenarios such as <span style="font-weight:600">bad weather</span> or <span style="font-weight:600">night</span> where the 2D image modality may fail. To gather data, I designed an Amazon MTurk data annotation interface to collect labels on the <a href = “https://waymo.com/intl/en_us/open/about/“ class = "desc-link"> Waymo Open </a> dataset for driver actions and explanations.</p>
+                    <a href = "http://www.allenkcheung.com/mturk-interface/" class = "interface-button" style = "font-weight: 300;background-color: none; color: rgb(112, 166, 196);">Try the annotation interface!</a>
                 </div>
             </div>
-            <div class = proj-header>
+
+            <div class = proj-header style = "padding-top: 100px;">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#128038;</span>Unsupervised 3D Reconstruction</div>
                     <div class = "tag-container">
