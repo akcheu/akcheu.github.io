@@ -371,7 +371,9 @@ section{
 .projects .card-container .info {
     height: 400px;
     width: 650px;
-    border-style: dotted;
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .projects .card-container .desc {
