@@ -51,3 +51,66 @@ window.addEventListener('scroll', () => {
 $(document).ready(function(){
     $(this).scrollTop(0);
 });
+
+var about = document.getElementById('about');
+function fadeOutOnScroll(element) {
+	if (!element) {
+		return;
+	}
+	
+	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+	var elementHeight = element.offsetHeight;
+	var scrollTop = document.documentElement.scrollTop;
+	
+	var opacity = 1;
+	if (scrollTop > distanceToTop) {
+		opacity = 1 - ((scrollTop - distanceToTop) / elementHeight);
+	}
+	
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+	}
+}
+
+var hide = document.querySelectorAll('#hideme');
+console.log(hide)
+function fadeInOnScroll(element) {
+	if (!element) {
+		return;
+	}
+
+    var position = element.getBoundingClientRect();
+	var visible = false;
+	var opacity = 0;
+    if (position.top < window.innerHeight) {
+        opacity = (window.innerHeight - position.top) / element.offsetHeight;
+    }
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+	}
+}
+
+function scrollHandler() {
+    fadeOutOnScroll(about);
+    for (var i = 0, len = hide.length; i < len; i++) {
+        fadeInOnScroll(hide[i])
+    }
+}
+
+window.addEventListener('scroll', scrollHandler);
+
+
+// window.addEventListener('scroll', function() {
+// 	var element = document.getElementById('man');
+// 	var position = element.getBoundingClientRect();
+
+// 	// checking whether fully visible
+// 	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+// 		console.log('Element is fully visible in screen');
+// 	}
+
+// 	// checking for partial visibility
+// 	if(position.top < window.innerHeight && position.bottom >= 0) {
+// 		console.log('Element is partially visible in screen');
+// 	}
+// });
