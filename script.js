@@ -91,7 +91,7 @@ function fadeInOnScroll(element) {
 }
 
 function scrollHandler() {
-    fadeOutOnScroll(about);
+    // fadeOutOnScroll(about);
     for (var i = 0, len = hide.length; i < len; i++) {
         fadeInOnScroll(hide[i])
     }

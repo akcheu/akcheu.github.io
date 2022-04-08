@@ -63,10 +63,10 @@
 
     <section class="projects" id="projects">
         <div class="max-width">
-            <div class="title">
+            <div class="title" id = "hideme">
                 <div class="title-text">Projects</div>
             </div>
-            <div class = proj-header-first>
+            <div class = proj-header-first id = "hideme">
                 <div class = "proj-title-container">
                     <div class = "proj-title-first"><span class = "emoji">&#128663;</span>2D-3D Multi-modal fusion for AVs</div>
                     <div class = "tag-container">
@@ -76,7 +76,7 @@
                 </div>
                 <div class = "desc-header"><span>AUG 2021 - NOW</span><a href="http://www.svcl.ucsd.edu/~nuno/"> @ SVCL</a></div>
             </div>
-            <div class = "card-container">
+            <div class = "card-container" id = "hideme">
                 <div class = "info">
                     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRp0uip8tKQM962RNH6zq6iC_9iIYgYzUkQG7w7dhJBNMcXRhDZ9Arame0X-J9YeICzLE3w-b_fsy9X/embed?start=true&loop=true&delayms=5000" frameborder="0" width=647 height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class = proj-header style = "padding-top: 100px;">
+            <div class = proj-header id = "hideme" style = "padding-top: 100px;">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#128038;</span>Unsupervised 3D Reconstruction</div>
                     <div class = "tag-container">
@@ -96,7 +96,7 @@
                 </div>
                 <div class = "desc-header"><span>FEB - AUG 2021</span><a href="http://www.svcl.ucsd.edu/~nuno/"> @ SVCL</a></div>
             </div>
-            <div class = "card-container">
+            <div class = "card-container" id = "hideme">
                 <div class = "info">
                     <div class = "image" style="display:flex; flex-direction:column;">
                         <img src = "images/seagull.gif" style="width: 195px">
@@ -124,7 +124,7 @@
                     <p>Fully supervised methods [1, 2, 4] relied on unreasonably large amounts of synthetic data, while current unsupervised methods [5, 6, 7] are clearly lacking in performance. We wanted to explore how we can incorporate a small amount of 3D data in this latter group to boost this suboptimal performance. This would potentially be especially useful for classes with complex topologies or different modes, such as pianos, cups, or chairs. We selected the paper Shape and Viewpoints without Keypoints (UCMR) [5] as the base of our work. Our first step was to verify our hypothesis that the mean template shape greatly affected performance, and thus incorporating a more suitable base shape to the specific class mode would lead to improvements.</p>
                 </div>
             </div>
-            <div class = proj-header style="margin-top: -20px">
+            <div class = proj-header id = "hideme" style="margin-top: -20px">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#129514;</span>SMART 5.0</div>
                     <div class = "tag-container">
@@ -135,7 +135,7 @@
                 </div>
                 <div class = "desc-header"><span>MAR 2021 - NOW</span><a href="https://cseweb.ucsd.edu/groups/guru/"> @ GURU</a></div>
             </div>
-            <div class = "card-container">
+            <div class = "card-container" id = "hideme">
                 <div class = "info">
                     <iframe src="https://drive.google.com/file/d/1wi4KchkbJNMJ_gpN8Yb7Ms_S0bEJR2XF/preview" width="655" height="480"></iframe>
                 </div>
@@ -143,7 +143,7 @@
                     <p>SMART 5.0 is a deep learning model that uses a Transformer architecture for natural product identification in the drug discovery workflow. Previous iterations of SMART adopted a CNN-based architecture, taking in images of HSQC spectra plots as input to the model. Given the sequential nature of HSQC spectra coordinates, Morgan Fingerprints, and SMILES strings, a sequence-to-sequence Transformer model may be better suited for the problem. </p>
                 </div>
             </div>
-            <div class = proj-header style="padding-top: 150px">
+            <div class = proj-header id = "hideme" style="padding-top: 150px">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#128444;&#65039;</span>Basic 3D Image Reconstruction</div>
                     <div class = "tag-container">
@@ -153,7 +153,7 @@
                 </div>
                 <div class = "desc-header"><span>DEC 2021</span><a href="http://www.svcl.ucsd.edu/~nuno/"> @ CSE 152A</a></div>
             </div>
-            <div class = "card-container" style="height:500">
+            <div class = "card-container" id = "hideme" style="height:500">
                 <div class = "info" style="display: flex; flex-direction: column; height: 580px;">
                     <img src = "images/bird_temp.png" style="width: 640px; margin-bottom: 15px; border-radius: 15px;">
                     <img src = "images/3dbird.png" style="width: 640px; border-radius: 15px;">
@@ -162,7 +162,7 @@
                     <p>In the domain of computer vision, point cloud data allows for objects to be represented in the three dimensional space through a large set of (𝑥, 𝑦, 𝑧) geometric coordinates. This project uses a dataset of 49 images of a bird plushie on a platform from various perspectives to reconstruct a 3D point-cloud representation of the object. I approached this problem through the means of multi-view stereo (MVS) by drawing point correspondences between neighboring stereo images, leveraging triangulation to reconstruct a set of 3D points, and ultimately validating the resulting point cloud for outliers to remove noise. Prior to deriving point correspondences, I utilized the Scale Invariant Feature Transform (SIFT) detection algorithm in the OpenCV library to identify points of interests across the 49 images.</p>
                 </div>
             </div>
-            <div class = proj-header>
+            <div class = proj-header id = "hideme">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#128101;</span>Shadow Mapping</div>
                     <div class = "tag-container">
@@ -171,7 +171,7 @@
                 </div>
                 <div class = "desc-header"><span>NOV 2021</span><a href="http://www.svcl.ucsd.edu/~nuno/"> @ CSE 167</a></div>
             </div>
-            <div class = "card-container">
+            <div class = "card-container" id = "hideme">
                 <div class = "info" >
                     <iframe src="http://www.youtube.com/embed/RxEcCIRT5G0?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1"  width="660" height="366"  frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -179,7 +179,7 @@
                     <p>Shadow mapping is a common technique for the creation of hard shadows in a scene rendering of objects with the help of texture buffers. For this project, I experimented with shadow mapping by employing two rendering passes to create the effect: one is a camera at the light source responsible for casting the light and shadows, and another is at the actual camera that is considered for the viewer’s perspective.</p>
                 </div>
             </div>
-            <div class = proj-header style="margin-top: -25px">
+            <div class = proj-header id = "hideme" style="margin-top: -25px">
                 <div class = "proj-title-container">
                     <div class = "proj-title"><span class = "emoji">&#128172;</span>Hate Speech Classifier</div>
                     <div class = "tag-container">
@@ -189,7 +189,7 @@
                 </div>
                 <div class = "desc-header"><span>MAR 2022</span><a href="http://www.svcl.ucsd.edu/~nuno/"> @ LIGN 167</a></div>
             </div>
-            <div class = "card-container">
+            <div class = "card-container" id = "hideme">
                 <div class = "info">
                     <iframe src="https://drive.google.com/file/d/1IaKxtMusPcdF7RddTJJo3dcpyXJLs43W/preview" width="655" height="480"></iframe>
                 </div>
