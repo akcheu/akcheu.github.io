@@ -90,12 +90,12 @@ function fadeInOnScroll(element) {
 	}
 }
 
-function scrollHandler() {
-    // fadeOutOnScroll(about);
-    for (var i = 0, len = hide.length; i < len; i++) {
-        fadeInOnScroll(hide[i])
-    }
-}
+// function scrollHandler() {
+//     // fadeOutOnScroll(about);
+//     for (var i = 0, len = hide.length; i < len; i++) {
+//         fadeInOnScroll(hide[i])
+//     }
+// }
 
 window.addEventListener('scroll', scrollHandler);
 
