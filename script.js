@@ -72,7 +72,7 @@ function fadeOutOnScroll(element) {
 	}
 }
 
-var hide = document.querySelectorAll('#hideme');
+var hide = document.querySelectorAll('#hideme1');
 console.log(hide)
 function fadeInOnScroll(element) {
 	if (!element) {
@@ -90,12 +90,12 @@ function fadeInOnScroll(element) {
 	}
 }
 
-// function scrollHandler() {
-//     // fadeOutOnScroll(about);
-//     for (var i = 0, len = hide.length; i < len; i++) {
-//         fadeInOnScroll(hide[i])
-//     }
-// }
+function scrollHandler() {
+    // fadeOutOnScroll(about);
+    for (var i = 0, len = hide.length; i < len; i++) {
+        fadeInOnScroll(hide[i])
+    }
+}
 
 window.addEventListener('scroll', scrollHandler);
 
