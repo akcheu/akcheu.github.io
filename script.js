@@ -99,6 +99,12 @@ function scrollHandler() {
 
 window.addEventListener('scroll', scrollHandler);
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    console.log("Hello")
+}
+
 
 // window.addEventListener('scroll', function() {
 // 	var element = document.getElementById('man');
